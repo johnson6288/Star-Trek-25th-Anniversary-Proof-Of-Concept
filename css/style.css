@@ -1,0 +1,264 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+html {
+	cursor: url("../images/cursor.png"), default;
+}
+
+.admiral {
+	position: absolute;
+	top: 98px;
+	left: 223px;
+	padding: 0px;
+}
+
+.Bridge {
+  width: 960px;
+}      
+.Kirk {
+  position: absolute;
+  top: 446px; 
+  left: 427px;  
+  width: 114px;
+  height: 114px;
+  padding: 0px;
+  border: 0px solid yellow;
+}
+
+.kSelection1 {
+  position: absolute;
+  top: 307px; 
+  left: 187px;  
+  width: 96px;
+  height: 96px;
+  padding: 0px;
+  border: 4px solid yellow;
+  z-index: 0;
+  display: none;
+}
+
+.chekov {
+  position: absolute;
+  top: 354px; 
+  left: 545px;  
+  width: 114px;
+  height: 114px;
+  padding: 0px;
+  border: 0px solid yellow;
+}
+.cSelection {
+  position: absolute;
+  top: 217px; 
+  left: 187px;  
+  width: 179.2px;
+  height: 75.6px;
+  padding: 0px;
+  border: 4px solid yellow;
+  z-index: 9;
+  display: none;
+}
+.cTool {
+  position: absolute;
+  top: 220px; 
+  left: 190px;  
+  width: 179.2px;
+  height: 75.6px;
+  padding: 0px;
+  border: 0px solid yellow;
+  z-index: 10;
+  display: none;
+}
+
+.cTool:hover + .cSelection {
+  display: block;
+}
+
+.Spock {
+  position: absolute;
+  top: 337px; 
+  left: 824px;  
+  width: 114px;
+  height: 114px;
+  padding: 0px;
+  border: 0px solid yellow;
+}
+.sSelection1 {
+  position: absolute;
+  top: 307px; 
+  left: 187px;  
+  width: 96px;
+  height: 96px;
+  padding: 0px;
+  border: 4px solid yellow;
+  z-index: 0;
+  display: none;
+}
+
+.Tools1:hover + .kSelection1 {
+  display: block;
+}
+
+.kSelection2 {
+  position: absolute;
+  top: 307px; 
+  left: 287px;  
+  width: 96px;
+  height: 96px;
+  padding: 0px;
+  border: 4px solid yellow;
+  z-index: 1;
+  display: none;
+}
+
+.Tools2:hover + .kSelection2 {
+  display: block;
+}
+
+.kSelection3 {
+  position: absolute;
+  top: 307px; 
+  left: 387px;  
+  width: 96px;
+  height: 96px;
+  padding: 0px;
+  border: 4px solid yellow;
+  z-index: 3;
+  display: none;
+}
+
+.Tools3:hover + .kSelection3 {
+  display: block;
+}
+
+.Tools1 {
+  position: absolute;
+  top: 310px;
+  left: 190px;
+  display: none;
+  z-index: 4;
+}
+
+.Tools2 {
+  position: absolute;
+  top: 310px;
+  left: 290px;
+  display: none;
+  z-index: 5;
+}
+
+.Tools3 {
+  position: absolute;
+  top: 310px;
+  left: 390px;
+  display: none;
+  z-index: 6;
+}
+
+hr {
+	border: 1px solid orange;
+	opacity: .80;
+}
+
+.disclaimer {
+  position: absolute;
+  top: 75px;
+  left: 190px;
+  width: 580px;
+  height: 480px;
+  padding: 10px;
+  border: 2px solid orange;
+  opacity: .70;
+  background-color: black;
+  color: #3399ff;
+}
+
+.disclaimerText {
+  position: absolute;
+  letter-spacing: 2px;
+  top: 75px;
+  left: 190px;
+  width: 580px;
+  height: 480px;
+  padding: 10px;
+  border: 0px solid orange;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16.5px;
+  color: #3399ff;
+
+}
+
+.disclaimerButton {
+  position: absolute;
+  top: 25px;
+  left: 793px;
+  padding: 0px;
+  z-index: 10;
+}
+
+.disclaimerConfirm {
+  position: absolute;
+  top: 21px; 
+  left: 789px;  
+  width: 90px;
+  height: 49px;
+  padding: 0px;
+  border: 4px solid yellow;
+  display: none;
+  z-index: 9;
+}
+
+.disclaimerButton:hover + .disclaimerConfirm {
+  display: block;
+}
+
+.message {
+  position: absolute;
+  top: 123px;
+  left: 247px;
+  width: 620px;
+  height: 200px;
+  padding: 0px;
+  border: 2px solid orange;
+  opacity: .70;
+  background-color: black;
+  color: #3399ff;
+}
+
+.messageText {
+  position: absolute;
+  letter-spacing: 2px;
+  top: 133px;
+  left: 267px;
+  width: 580px;
+  height: 180px;
+  padding: 0px;
+  border: 0px solid orange;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16.5px;
+  color: #3399ff;
+}
+
+.confirmButton {
+  position: absolute;
+  top: 72px;
+  left: 870px;
+  padding: 0px;
+  z-index: 8;
+}
+
+.confirm {
+  position: absolute;
+  top: 69px; 
+  left: 867px;  
+  width: 90px;
+  height: 49px;
+  padding: 0px;
+  border: 4px solid yellow;
+  z-index: 7;
+  display: none;
+}
+
+.confirmButton:hover + .confirm {
+  display: block;
+}
+

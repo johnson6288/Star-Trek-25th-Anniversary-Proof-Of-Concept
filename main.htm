@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>ST Proof Of Concept</title>
+</head>
+
+<!-- Disclaimer -->
+<div id="disclaimerButton" class="disclaimerButton" style="display: block" onclick="confirmDisclaimer()">
+	<img src="images/button.jpg" height=50 width=90>
+</div>
+<div id="disclaimerConfirm" class="disclaimerConfirm">
+</div>
+<div id="disclaimer" class="disclaimer" style="display: block">
+</div>
+
+<div id="disclaimerText" class="disclaimerText" style="display: none">
+	<center><b>Disclaimer</b></center>
+	<hr style:"border: 1px solid orange">
+	<p>Thank you for visiting! Please note that this was created purely for fun and educational purposes only. I made this as a fun way to learn and practice using JavaScript to create functions, manipulate web page structure using the Document Object Module, and manipulate web page styles using the CSS DOM. This is for demonstration purposes and I make no profit from this creation. This is not meant to be a full encompassing use of HTML, CSS, or JavaScript and is a proof of concept only.</p> 
+	<p>© 2021 Matthew Johnson. All rights reserved. All trademarks are property of their respective owners in the US and other countries.</p>
+	<p>TM &amp; © 2015 CBS Studios Inc. STAR TREK and related marks and logos are trademarks of CBS Studios Inc. All Rights Reserved.</p>
+	<p>Original Software © 1993 Interplay Entertainment Corp. All rights reserved.</p>
+</div>
+
+<!-- Body onload. Preload gifs for playback later -->
+<body onload="">
+	<div id="preloader" class="preloader" style="display: none">
+		<img src="images/ReturnToDemonWorld.gif">
+		<img src="images/bridge.gif">
+		<img src = "images/polluxnavigate.gif">
+    	<img src = "images/polluxorbit.gif">
+		<img src = "images/transport2.gif">
+		<img src = "images/cursor.png">
+		<img src = "images/ending.gif">
+	</div>
+	
+	<!-- Load Audio -->
+	<audio id="myAudio">
+  		<source src="audio/click.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio id="bridgeAudio">
+  		<source src="audio/bridge.mp3" type="audio/mpeg">
+  		Your browser does not support the audio element.
+	</audio>
+	
+	<!-- Load Admiral Div for bridge screen **Need to change from Admiral as it's now used for other screen displays -->
+	<div id="admiral" class="admiral" style="display: none">
+		<img id="myScreen" src = "images/admiral.gif" height=220 width=530>
+	</div>
+
+	<!-- Div for Spock Selction Box and selection tools-->
+	<div id="Spock" class="Spock" onclick="sSelection()">
+	</div>
+	<div id="sSelection1" class="sSelection1">
+	</div>
+	
+	<!-- Dive for Chekov box and selection tools -->
+	<div id="chekov" class="chekov" onclick="cControls()">
+	</div>
+	<div id="cTool" class="cTool" style="display: none" onclick="cTool()">
+		<img src="images/starmap.gif" height=75.6 width=179.2>
+	</div>
+	<div id="cSelection" class="cSelection">
+	</div>
+
+	<!-- Div for Kirk selection box and selection tools -->
+	<div id="Kirk" class="Kirk" onclick="kControls()">
+	</div>
+	<div id="Tools1" class="Tools1" style="display: none">
+		<img src = "images/kirkoptions1.gif" height=96 width=96>
+	</div>	
+	<div id="kSelection1" class="kSelection1">
+	</div>
+	<div id="Tools2" class="Tools2" style="display: none" onclick="tools2Selection()">
+		<img src = "images/kirkoptions2.gif" height=96 width=96>
+	</div>
+	<div id="kSelection2" class="kSelection2">
+	</div>
+	<div id="Tools3" class="Tools3" style="display: none">
+		<img src = "images/kirkoptions3.gif" height=96 width=96>
+	</div>
+	<div id="kSelection3" class="kSelection3">
+	</div>
+
+	<!-- Div for confirm button -->
+	<div id="confirmButton" class="confirmButton" style="display: none" onclick="closeAll()">
+		<img src="images/button.jpg" height=50 width=90>
+	</div>
+	<div id="confirm" class="confirm">
+	</div>
+
+	<!-- div for conversation messages  -->
+	<div id="message" class="message" style="display: none">
+	</div>
+
+	<!-- main div for the bridge -->
+	<div id="Bridge">
+		<img id="myBridge" src="images/SpaceStars.gif" height=600 width=960>
+	</div>
+
+	<!-- Div for the message text displayed in message box -->
+	<div id="messageText" class="messageText" style="display: none">
+		<center><b>MR. SPOCK</b></center>
+		<hr style:"border: 1px solid orange">
+		<p>I have no logical advice for you at this time captain.</p>
+		<p>I suggest we wait for further orders from Starfleet</p>
+	</div>
+
+<!-- script files -->	
+<script type="text/JavaScript" src="main.js"></script>
+<script type="text/JavaScript"> 
+
+</script>
+</body>
+</html>
